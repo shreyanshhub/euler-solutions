@@ -1,6 +1,7 @@
 def sol():
   sum = 0
   
+  dp = [0 for i in range(1,4000001)]
   dp = [1,1]
   
   for i in range(2,4000001):
