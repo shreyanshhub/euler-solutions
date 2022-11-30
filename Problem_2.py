@@ -1,18 +1,18 @@
 def sol():
+  
   sum = 0
+  a,b = 0,1
   
-  dp = [0 for i in range(1,4000001)]
-  dp = [1,1]
-  
-  for i in range(2,4000001):
+  for i in range(1,4000001):
     
-    dp[i] = dp[i-1] + dp[i-2]
-    if dp[i] % 2 == 0:
-      sum += dp[i]
+    if b % 2 == 0:
+      sum += i
       
-  return sum 
+    a,b = b,a+b
+    
+  print(sum)
 
-if __name__ == "__main__":
+if __name__ = "__main__":
   sol()
     
     
